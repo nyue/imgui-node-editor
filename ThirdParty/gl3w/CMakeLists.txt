@@ -17,3 +17,9 @@ if (UNIX AND (NOT APPLE))
 endif()
 
 set_property(TARGET gl3w PROPERTY FOLDER "ThirdParty")
+
+install ( TARGETS
+  gl3w
+  DESTINATION
+  lib
+  )

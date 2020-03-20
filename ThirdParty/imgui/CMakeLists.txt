@@ -22,3 +22,9 @@ target_include_directories(${PROJECT_NAME} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
 target_compile_definitions(${PROJECT_NAME} PUBLIC "ImDrawIdx=unsigned int")
 
 set_property(TARGET ${PROJECT_NAME} PROPERTY FOLDER "ThirdParty")
+
+install ( TARGETS
+  ${PROJECT_NAME}
+  DESTINATION
+  lib
+  )
